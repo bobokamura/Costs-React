@@ -1,0 +1,25 @@
+.navbar {
+  display: flex; /*para os itens da barra de navegação(li)*/
+  justify-content: space-between; /*escaçamento entre os itens*/
+  background-color: #222;
+  padding: 1em;
+}
+
+.list {
+  display: flex;
+  list-style: none; /*retira os marcadores(pontos)*/
+  align-items: center;
+}
+
+.item {
+  margin-right: 1em; /*afastar cada um dos itens entre si*/
+}
+
+.item a {
+  color: #fff; /*cor itens dos links*/
+  text-decoration: none; /*retirar sublinhados*/
+}
+
+.item a:hover {
+  color: #ffbb33; /*quando passar o mouse por cima, muda a cor do link*/
+}
