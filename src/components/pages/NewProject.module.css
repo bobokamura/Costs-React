@@ -1,0 +1,13 @@
+.newproject_container {
+  width: 450px; /*largura máxima*/
+  margin: 0 auto; /*centralizar na tela*/
+  padding: 3em; /*espaçamento interno*/
+}
+
+.newproject_container h1 {
+  margin-bottom: 0.5em; /*afastar o parágrafo */
+}
+
+.newproject_container p {
+  color: #7b7b7b;
+}
