@@ -1,0 +1,20 @@
+.container {
+  width: 1200px; /* largura limite conteúdo central */
+  display: flex; /*posicionamento dos elementos*/
+  justify-content: space-between; /*espaçamento por igual ao longo da linha horizontal*/
+  margin: 0 auto; /*centralizar na tela*/
+  flex-wrap: wrap; /*quando os elementos filhos ultrapassarem o width, muda de linha*/
+}
+
+.min-height {
+  min-height: 75%; /*para o conteúdo ocupar um grande espaço da tela / customClass*/
+}
+
+.start {
+  justify-content: flex-start; /*coloca o conteúdo no início, elimina o space-between*/ 
+}
+
+.column {
+  flex-direction: column; /*cria um layout colunar*/
+  justify-content: flex-start; 
+}
