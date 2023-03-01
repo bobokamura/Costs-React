@@ -1,0 +1,20 @@
+.form_control {
+  display: flex;
+  flex-direction: column; /*layout colunar para a label fica em cima do input*/
+  margin-bottom: 1em; /*afastar os conteúdos*/
+}
+
+.form_control label {
+  margin-bottom: 0.6em; /*afasta a label do input*/
+  font-weight: bold;
+}
+
+.form_control input {
+  padding: 0.7em; /*espaçamento interno do input, não grudar a fonte nas bordas*/
+  border-radius: 0; /*deixa os cantos quadrados*/
+  border: none;
+}
+
+.form_control input::placeholder {
+  color: #7b7b7b;
+}

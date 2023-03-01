@@ -1,0 +1,13 @@
+.btn {
+  background-color: #222; /*fundo do botão*/
+  color: #fff; /*cor do texto do botão*/
+  padding: 0.7em 1.2em; /*aspecto retangular*/
+  text-decoration: none;
+  transition: 0.5s; /*para usar o hover*/
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  color: #ffbb33;
+}
