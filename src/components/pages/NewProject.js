@@ -6,7 +6,7 @@ function NewProject() {
   const history = useNavigate();
 
   function navigate() {
-    history("/projects", { message: "Projeto criado com sucesso!" });
+    history("/projects", { state: { message: "Projeto criado com sucesso!" } });
   }
 
   function createPost(project) {
@@ -24,6 +24,7 @@ function NewProject() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
+        //redirect
         navigate();
       })
       .catch((err) => console.log(err));

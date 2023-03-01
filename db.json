@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Projeto Dev",
-      "budget": "20.000",
+      "budget": "25.000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -10,17 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "Projeto Infra",
-      "budget": "18.000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [
