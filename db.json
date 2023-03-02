@@ -21,6 +21,39 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Projeto Design",
+      "budget": "10.000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "name": "Projeto Planejamento",
+      "budget": "16.000",
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Projeto Dev v1",
+      "budget": "22.000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
