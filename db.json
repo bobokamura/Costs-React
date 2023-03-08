@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Projeto Dev",
-      "budget": "25.000",
+      "budget": "25000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -13,18 +13,18 @@
     },
     {
       "name": "Projeto Infra",
-      "budget": "60.000",
+      "budget": "600000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 2
     },
     {
-      "name": "Projeto Design Bracell",
-      "budget": "10.000",
+      "name": "Projeto Design",
+      "budget": "100000",
       "category": {
         "id": "3",
         "name": "Design"
@@ -39,21 +39,17 @@
         "name": "Planejamento"
       },
       "name": "Projeto Planejamento",
-      "budget": "16.000",
-      "cost": 0,
-      "services": [],
+      "budget": "16000",
+      "cost": 5000,
+      "services": [
+        {
+          "name": "Consultoria",
+          "cost": "5000",
+          "description": "Criar campos para cadastro",
+          "id": "bb7854bd-e718-4956-ba0e-b141a0b38b21"
+        }
+      ],
       "id": 4
-    },
-    {
-      "name": "Projeto Dev v1",
-      "budget": "22.000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [
