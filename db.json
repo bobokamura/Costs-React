@@ -7,30 +7,37 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 20,
+      "services": [
+        {
+          "name": "Contratar Dev Java",
+          "cost": "20",
+          "description": "Criar campos para cadastro",
+          "id": "22ea6bf5-7618-4333-ad1a-ee19aa209304"
+        }        
+      ],
       "id": 1
     },
     {
       "name": "Projeto Infra",
-      "budget": "60.000",
+      "budget": "600.000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 49,
+      "cost": 200,
       "services": [
         {
           "name": "Consultoria",
-          "cost": "44",
-          "description": "Prestar ajuda",
-          "id": "ba57e9a8-d67b-4fa0-aabb-97ed0b7950ca"
+          "cost": "100.000",
+          "description": "Consultoria voltada a análises",
+          "id": "18707bb7-c9a3-4b87-ba6a-d1234de1e6d3"
         },
         {
-          "cost": "5",
           "name": "Consultoria",
+          "cost": "100.000",
           "description": "Consultoria voltada a análises",
-          "id": "4eaba947-dd5f-48a5-b368-ed71d5e198b4"
+          "id": "4e594ce8-e3e3-46d8-a6a6-eaa884631095"
         }
       ],
       "id": 2
