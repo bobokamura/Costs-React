@@ -18,12 +18,25 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 49,
+      "services": [
+        {
+          "name": "Consultoria",
+          "cost": "44",
+          "description": "Prestar ajuda",
+          "id": "ba57e9a8-d67b-4fa0-aabb-97ed0b7950ca"
+        },
+        {
+          "cost": "5",
+          "name": "Consultoria",
+          "description": "Consultoria voltada a análises",
+          "id": "4eaba947-dd5f-48a5-b368-ed71d5e198b4"
+        }
+      ],
       "id": 2
     },
     {
-      "name": "Projeto Design Bracell",
+      "name": "Projeto Design",
       "budget": "10.000",
       "category": {
         "id": "3",
