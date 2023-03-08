@@ -34,6 +34,7 @@ function Project() {
   }
 
   function editPost(project) {
+    setMessage("");
     //budget validation
     if (project.budget < project.cost) {
       setMessage("Orçamento não pode ser menor do que o custo do projeto");
@@ -52,7 +53,7 @@ function Project() {
         setProject(data);
         setShowProjectForm(false);
         setMessage("Projeto alterado com sucesso!");
-        setTypeMessage("success")
+        setTypeMessage("success");
       })
       .catch((err) => console.log(err));
   }
@@ -63,7 +64,7 @@ function Project() {
         <div className={styles.project_details}>
           <Container customClass="column">
             <div className={styles.details_container}>
-            {message && <Message type={typeMessage} msg={message} />}
+              {message && <Message type={typeMessage} msg={message} />}
               <h1>Projeto: {project.name}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
                 {!showProjectForm ? "Editar projeto" : "Fechar"}
