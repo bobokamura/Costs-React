@@ -66,24 +66,34 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        
         setShowServiceForm(false);
         setServices(data.services);
       })
       .catch((error) => console.log(error));
   }
 
-  function removeService(id) {
+  function removeService(id, cost) {
     setMessage("");
-    fetch(`http://localhost:5000/projects/${id}`, {
-      method: "DELETE",
+
+    const servicesUpdated = project.services.filter(
+      (service) => service.id !== id
+    );
+
+    const projectUpdate = project;
+    projectUpdate.services = servicesUpdated;
+    projectUpdate.cost = parseFloat(projectUpdate.cost) - parseFloat(cost);
+
+    fetch(`http://localhost:5000/projects/${projectUpdate.id}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(projectUpdate),
     })
       .then((resp) => resp.json())
       .then(() => {
-        setServices(services.filter((service) => service.id !== id));
+        setProject(projectUpdate);
+        setServices(servicesUpdated);
         setMessage("Serviço(s) removido(s) com sucesso!");
         setTypeMessage("success");
       })
@@ -174,7 +184,7 @@ function Project() {
             </div>
             <h2>Serviços:</h2>
             <Container customClass="start">
-              {services.length > 0 &&
+              {services.length > 0 ? (
                 services.map((service) => (
                   <ServiceCard
                     id={service.id}
@@ -184,8 +194,10 @@ function Project() {
                     key={service.uuidv4}
                     handleRemove={removeService}
                   />
-                ))}
-              {services.length === 0 && <p>Não há serviços cadastrados.</p>}
+                ))
+              ) : (
+                <p>Não há serviços cadastrados.</p>
+              )}
             </Container>
           </Container>
         </div>
